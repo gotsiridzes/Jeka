@@ -1,0 +1,20 @@
+{
+    "name": "CyberDoge",
+    "manifest_version": 3,
+    "version": "1.0.0",
+    "description": "Your best friend forever",
+    "icons":{
+      "16": "resources/images/doge.png",
+      "48": "resources/images/doge.png",
+      "128": "resources/images/doge.png"
+    },
+      "content_scripts": [ {
+        "css": [ "main.css" ],
+        "js": [ "main.js" ],
+        "matches": [ "http://*/*" ]
+      } ],
+    "web_accessible_resources": [{
+    "resources": ["resources/images/*"],
+    "matches": ["<all_urls>"]
+  }]
+  }
